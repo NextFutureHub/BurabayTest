@@ -50,7 +50,7 @@ const RegistrationForm: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen relative">
       <div className="absolute inset-0 bg-[#0A7D9E] opacity-[0.35]"></div>
-      <div className="absolute inset-0 bg-[url('./bg_auth.png')] bg-cover bg-no-repeat opacity-[0.25]"></div>
+      <div className="absolute inset-0 bg-auth-bg bg-cover bg-no-repeat opacity-[0.25]"></div>
 
       <div className="relative flex flex-col justify-center items-center gap-[32px] w-[620px] h-[445px] bg-[#0A7D9E] rounded-lg shadow-md p-6">
         <h2 className="text-[32px] font-roboto text-white">Авторизация</h2>
@@ -62,7 +62,12 @@ const RegistrationForm: React.FC = () => {
                 id="username"
                 name="username"
                 value={formData.username}
-                onChange={handleChange}
+                onChange={(e) => 
+                  setFormData((prev) => ({
+                    ...prev,
+                    username: e.target.value,
+                  }))
+                }
                 className="block text-[#999999] font-roboto gap-10 pt-[35px] text-[16px] w-[556px] h-[69px] border border-gray-300 pt-3 pr-3 pl-3 pb-[14px] rounded-[8px] shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm mx-auto"
                 required
               >
