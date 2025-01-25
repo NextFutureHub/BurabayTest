@@ -52,7 +52,6 @@ const RegistrationForm: React.FC = () => {
       <div className="absolute inset-0 bg-[#0A7D9E] opacity-[0.35]"></div>
       <div className="absolute inset-0 bg-[url('./bg_auth.png')] bg-cover bg-no-repeat opacity-[0.25]"></div>
 
-      {/* Новый контейнер обертки с gap-32px */}
       <div className="relative flex flex-col justify-center items-center gap-[32px] w-[620px] h-[445px] bg-[#0A7D9E] rounded-lg shadow-md p-6">
         <h2 className="text-[32px] font-roboto text-white">Авторизация</h2>
 
