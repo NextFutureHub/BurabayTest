@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'auth-bg': "url('./bg_auth.png')",
+        'auth-bg': "url('./assets/bg_auth.png')",
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],

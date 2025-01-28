@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import RegistrationForm from './components/RegistrationForm.tsx';
-import Header from './components/Header.tsx';
+import SideNav from './components/SideNav.tsx';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header />
       <RegistrationForm />
+      <SideNav />
     </div>
   );
 };
